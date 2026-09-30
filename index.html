@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header class="bg-secondary-subtle">
+        <div class="head-item d-flex justify-content-center align-items-center py-1">
+            <div class="loge d-flex gap-3 align-items-center">
+                <div class="image-log  ">
+                    <i class="fa-solid fa-utensils fs-3 text-light"></i>
+                </div>
+                <div class="camtiop-log ">
+                    <h4 class="text-dark fw-bold">What's For Dinner</h4>
+                    <p class="fs-6">Your daily meal inspiration</p>
+                </div>
+            </div>
+            <div class="head-action d-flex gap-3 align-items-center">
+                <i class="fa-solid fa-bookmark fs-5"></i>
+                <i class="fa-solid fa-clock-rotate-left fs-5"></i>
+                <i class="fa-solid fa-gear fs-5"></i>
+                <img src="./image/imgi_1_avatar-4.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="for-Dinner">
+        <div class="Diner-card d-flex   gap-3 bg-light w-75 m-auto overflow-hidden rounded-4 ">
+            <div class="image-diner overflow-hidden  w-50">
+                <img src="./image/imgi_2_photo-1509722747041-616f39b57569.png" class="w-100 h-100" id="recipeImg"
+                    alt="">
+
+                <div class="badge-wrapper">
+                    <div class="floating-badge d-flex gap-2 align-items-center ">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <span class="fw-bold" id="recipe-badge">4.7</span>
+                        <span class="" id="cars-tage">(312 reviews)</span>
+                    </div>
+                </div>
+                <div class="tag-container ">
+                    <div class="tag-wrapper d-flex gap-5">
+                        <div class="tag-item d-flex flex-column align-items-center">
+                            <i class="fa-solid fa-clock text-warning fs-4"></i>
+                            <p class="m-0">Prep Time</p>
+                            <p class="fw-bold m-0" id="recipPrep">15 min</p>
+                        </div>
+                        <div class="tag-item d-flex flex-column align-items-center">
+                            <i class="fa-solid fa-fire-burner text-danger fs-4"></i>
+                            <p class="m-0">Cook Time</p>
+                            <p class="fw-bold m-0" id="recipCook">25 min</p>
+                        </div>
+                        <div class="tag-item d-flex flex-column align-items-center">
+                            <i class="fa-solid fa-users text-primary fs-4"></i>
+                            <p class="m-0">Servings</p>
+                            <p class="fw-bold m-0" id="recipServing">4 people</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diner-caption w-50 pt-4  ">
+                <div class="diner-caption-item d-flex justify-content-between">
+                    <div class="head-caption ">
+                        <span class="bg-success-subtle p-2 rounded-5" id="recipCap">Easy</span>
+                        <span class="bg-primary-subtle p-2 rounded-5" id="recipTion">talian</span>
+                        <p class="fs-1 pt-1 fw-bold m-0 " id="recipeName">Caprese Sandwich</p>
+                        <p class="m-0 pt-1 fs-5" id="recipeTitle">Fresh Italian sandwich with mozzarella, tomato, and
+                            basil</p>
+                    </div>
+                    <div class="diner-icon d-flex pt-4 p-4 gap-4">
+                        <i class="fa-solid fa-bookmark fs-5 "></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </div>
+                <div class="tap-diner  pt-3">
+                    <ul class="nav  mb-3 gap-5" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true"> <i class="fa-solid fa-list-check"></i>
+                                Ingredients</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false"> <i class="fa-solid fa-book-open"></i>
+                                Instructions</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false"> <i class="fa-solid fa-chart-pie"></i>
+                                Nutrition</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                                aria-selected="false"> <i class="fa-regular fa-lightbulb"></i>
+                                Chef's Tips</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active p-3" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="tap-item bg-warning-subtle p-2 rounded-3 ">
+                                <div class="ingredints d-flex gap-2">
+                                    <div class="tap-num text-light fw-bold">1</div>
+                                    <p class="fs-6">1 ciabatta bread</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2">
+                                    <div class="tap-num text-light fw-bold">2</div>
+                                    <p class="fs-6" id="recipIngred">200g fresh mozzarella, sliced</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2">
+                                    <div class="tap-num text-light fw-bold">3</div>
+                                    <p class="fs-6" id="recipIngred2">2 large tomatoes, sliced</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2">
+                                    <div class="tap-num text-light fw-bold">4</div>
+                                    <p class="fs-6" id="recipIngred3">
+                                        Fresh basil leaves</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2">
+                                    <div class="tap-num text-light fw-bold">5</div>
+                                    <p class="fs-6" id="recipIngred4">3 tablespoons pesto</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2">
+                                    <div class="tap-num text-light fw-bold">6</div>
+                                    <p class="fs-6" id="recipIngred5">
+                                        2 tablespoons balsamic glaze</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2">
+                                    <div class="tap-num text-light fw-bold">7</div>
+                                    <p class="fs-6" id="recipIngred7">Olive oil</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2">
+                                    <div class="tap-num text-light fw-bold">8</div>
+                                    <p class="fs-6" id="recipIngred6">Salt and pepper</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p-2" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div class="insctration-tap p-3 d-flex flex-column gap-3">
+                                <div class="ingredints d-flex gap-2  align-items-center">
+                                    <div class="tap-ingred text-light fw-bold">1</div>
+                                    <p class="fs-6" id="recipIngred11">Toast bread lightly until just crispy.</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2 align-items-center">
+                                    <div class="tap-ingred text-light fw-bold">2</div>
+                                    <p class="fs-6">Spread pesto on both sides of bread.</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2  align-items-center">
+                                    <div class="tap-ingred text-light fw-bold">3</div>
+                                    <p class="fs-6" id="recipIngred12">Layer mozzarella slices, tomato slices, and fresh basil leaves.</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2  align-items-center">
+                                    <div class="tap-ingred text-light fw-bold">4</div>
+                                    <p class="fs-6">
+                                        Drizzle with olive oil and balsamic glaze. Season with salt and pepper.</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2  align-items-center">
+                                    <div class="tap-ingred text-light fw-bold">5</div>
+                                    <p class="fs-6" id="recipIngred13">Slice ciabatta bread in half horizontally.</p>
+                                </div>
+                                <div class="ingredints d-flex gap-2  align-items-center">
+                                    <div class="tap-ingred text-light fw-bold">6</div>
+                                    <p class="fs-6">
+                                        Close sandwich, cut in half, and serve immediately.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p3" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab" tabindex="0">
+                            <div class="Nutrition-tap p-3">
+                                <div class="container">
+                                    <div class="row g-4">
+                                        <div class="col-6">
+                                            <div
+                                                class="Nutrition-item d-flex justify-content-between align-items-center bg-secondary-subtle p-3 rounded-3">
+                                                <div class="Nutrition-image d-flex align-items-center gap-3">
+                                                    <div class="nutr-icon bg-danger-subtle p-2 rounded-3"><i class="fa-solid fa-fire text-danger"></i>
+                                                    </div>
+                                                    <span class="fs-6 fw-bold text-secondary">Calories</span>
+                                                </div>
+                                                <span class="fw-bold fs-5" id="recipNutr">480 kcal</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div
+                                                class="Nutrition-item d-flex justify-content-between align-items-center bg-secondary-subtle p-3 rounded-3">
+                                                <div class="Nutrition-image d-flex align-items-center gap-3">
+                                                    <div class="nutr-icon bg-primary-subtle p-2 rounded-3"><i class="fa-solid fa-dumbbell text-primary"></i>
+                                                    </div>
+                                                    <span class="fs-6 fw-bold text-secondary">Protein</span>
+                                                </div>
+                                                <span class="fw-bold fs-5" id="recipNutr2">22g</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div
+                                                class="Nutrition-item d-flex justify-content-between align-items-center bg-secondary-subtle p-3 rounded-3">
+                                                <div class="Nutrition-image d-flex align-items-center gap-3">
+                                                    <div class="nutr-icon bg-warning-subtle p-2 rounded-3"><i class="fa-solid fa-wheat-awn text-warning"></i>
+                                                    </div>
+                                                    <span class="fs-6 fw-bold text-secondary">Carbohydrates</span>
+                                                </div>
+                                                <span class="fw-bold fs-5" id="recipNutr3">48g</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div
+                                                class="Nutrition-item d-flex justify-content-between align-items-center bg-secondary-subtle p-3 rounded-3">
+                                                <div class="Nutrition-image d-flex align-items-center gap-3">
+                                                    <div class="nutr-icon bg-danger-subtle p-2 rounded-3"><i class="fa-solid fa-droplet text-danger"></i>
+                                                    </div>
+                                                    <span class="fs-6 fw-bold text-secondary"> Fat</span>
+                                                </div>
+                                                <span class="fw-bold fs-5" id="recipNutr4">22g</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div
+                                                class="Nutrition-item d-flex justify-content-between align-items-center bg-secondary-subtle p-3 rounded-3">
+                                                <div class="Nutrition-image d-flex align-items-center gap-3">
+                                                    <div class="nutr-icon bg-success-subtle p-2 rounded-3"><i class="fa-solid fa-seedling text-success"></i>
+                                                    </div>
+                                                    <span class="fs-6 fw-bold text-secondary">Fiber</span>
+                                                </div>
+                                                <span class="fw-bold fs-5" id="recipNutr5">3g</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div
+                                                class="Nutrition-item d-flex justify-content-between align-items-center bg-secondary-subtle p-3 rounded-3">
+                                                <div class="Nutrition-image d-flex align-items-center gap-3">
+                                                    <div class="nutr-icon bg-danger-subtle p-2 rounded-3"><i class="fa-solid fa-cube text-danger"></i>
+                                                    </div>
+                                                    <span class="fs-6 fw-bold text-secondary">Sodium</span>
+                                                </div>
+                                                <span class="fw-bold fs-5"id="recipNutr6">680mg</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p-3" id="pills-disabled" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">
+                            <div class="Chef-Tips p-2">
+                                <div class="container">
+                                    <div class="row gy-4">
+                                        <div class="col-12">
+                                            <div class="Chef-Tips-item d-flex align-items-center  gap-3 bg-warning-subtle p-3 border-warning border-start border-5 rounded-3">
+                                                <div class="Tips-num bg-warning p-1 rounded-circle"><i class="fa-solid fa-check text-light"></i></div>
+                                                <p>Use ripe, in-season tomatoes for best flavor</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="Chef-Tips-item d-flex align-items-center  gap-3 bg-warning-subtle p-3 border-warning border-start border-5 rounded-3">
+                                                <div class="Tips-num bg-warning p-1 rounded-circle"><i class="fa-solid fa-check text-light"></i></div>
+                                                <p>Buffalo mozzarella is traditional but harder to slice</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="Chef-Tips-item d-flex align-items-center  gap-3 bg-warning-subtle p-3 border-warning border-start border-5 rounded-3">
+                                                <div class="Tips-num bg-warning p-1 rounded-circle"><i class="fa-solid fa-check text-light"></i></div>
+                                                <p>Toast bread lightly - not too crispy</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="Chef-Tips-item d-flex align-items-center  gap-3 bg-warning-subtle p-3 border-warning border-start border-5 rounded-3">
+                                                <div class="Tips-num bg-warning p-1 rounded-circle"><i class="fa-solid fa-check text-light"></i></div>
+                                                <p>Add prosciutto or salami for a heartier sandwich</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" onclick="nextmeal()" class="btn btn-warning text-danger  p-2 rounded-3"> <i
+                        class="fa-solid fa-recycle"></i>
+                    Try Another Recipe</button>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
